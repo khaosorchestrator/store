@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: MultiTenant
+  datasource:
+    url: 'jdbc:mysql://localhost/multitenant?createDatabaseIfNotExist=true&useSSL=false'
+    username: 'root'
+    password: 'password'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: none
+  main:
+    allow-circular-references: true
